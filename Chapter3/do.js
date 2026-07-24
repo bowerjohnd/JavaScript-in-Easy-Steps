@@ -1,0 +1,8 @@
+let i = 2;
+
+do {
+    i *= 2;
+    console.log('Multiplied Number: ' + i);
+} 
+while (i < 1000);
+
