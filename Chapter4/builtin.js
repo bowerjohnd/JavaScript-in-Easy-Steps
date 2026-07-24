@@ -1,0 +1,16 @@
+let jsString = 'Text';
+let jsNumber = 125000;
+let jsBoolean = true;
+
+let jsObject = {firstName: 'Mike', lastName: 'Mcgrath'}
+let jsDate = new Date();
+let jsArray = [1, 2, 3];
+let jsRegExp = /ineasysteps/i;
+let jsMath = Math;
+let jsError = new Error('Error! wysiwyg');
+
+console.log('Date Object: ' + jsDate);
+console.log('Locale Date String: ' + jsDate.toLocaleString());
+
+console.log('\nPrimitive Number: ' + jsNumber);
+console.log('Locale Number String: ' + jsNumber.toLocaleString());
