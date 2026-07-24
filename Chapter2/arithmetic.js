@@ -1,0 +1,12 @@
+(function () {
+
+    let sum = 80 + 20 ; console.log('Addition: ' + sum);
+    let sub = sum - 50 ; console.log('Subtraction: ' + sub);
+    let mul = sum * 5 ; console.log('Multiplication: ' + mul);
+    let div = sum / 4 ; console.log('Division: ' + div);
+    let mod = sum % 2 ; console.log('Modulus: ' + mod);
+    let inc = ++sum ; console.log('Increment: ' + inc);
+    let dec = --sum ; console.log('Decrement: ' + dec);
+    let exp = 3**3 ; console.log('Exponent 3^3: ' + exp);
+
+}) ()
