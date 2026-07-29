@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+
+    <style>
+        p {
+            width: 500px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <p id="box">Target</p>
+    <p id="info">Place Mouse Over Target</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        (function() {
+            
+            const box = document.getElementById('box');
+            const btn = document.getElementById('btn');
+
+            box.addEventListener('mouseover',
+                function(event){reactTo(event, 'Red')});
+            box.addEventListener('mouseout',
+                function(event){reactTo(event, 'Purple')});
+            box.addEventListener('mousedown',
+                function(event){reactTo(event, 'Green')});
+            box.addEventListener('mouseup',
+                function(event){reactTo(event, 'Blue')});
+            btn.addEventListener('click',
+                function(event){reactTo(event, 'Orange')});
+
+        })()
+
+        function reactTo(event, color) {
+            document.getElementById('box').style.background = color;
+            document.getElementById('info').innerText = event.type;
+        }
+
+    </script>
+
+</body>
+</html>
